@@ -31,8 +31,40 @@ body {
 
 .sidebar .logo {
     text-align: center;
+    margin-bottom: 27px;
 }
 
+.menu-items {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.menu-item a {
+    display: flex;
+    align-items: center;
+    color: #858796;    
+    text-decoration: none;
+    padding: 13px 15px;
+}
+
+.menu-item a span {
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.menu-item:hover {
+    background: #467DF2;
+    border-radius: 5px;
+}
+
+.menu-item:hover a svg path{
+    fill: #FFFFFF;
+}
+
+.menu-item:hover a {
+    color: #FFFFFF;
+}
 
 
 
