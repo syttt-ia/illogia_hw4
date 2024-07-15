@@ -115,7 +115,7 @@ body {
 
 .header-menu {
     display: flex;
-    padding: 19px 0px 19px 40px;
+    padding: 19px 0 19px 40px;
     align-items: center;
 }
 
@@ -140,19 +140,81 @@ body {
 .header-myteam {
     margin-left: 60px;
     font-size: 14px;
+    color: #858796;
+    cursor: pointer;
+}
+
+.header-myteam:hover {
+    color: #3D63D2;
 }
 
 .header-tasks {
     display: flex;
     align-items: center;
     margin-left: 40px;
-}
-
-.header-tasks {
     font-size: 14px;
     line-height: 19;
+    cursor: pointer;
 }
 
 .header-tasks span {
     margin-right: 8px;
+    color: #858796;
+}
+
+.header-tasks:hover span{
+    color: #3D63D2;
+}
+
+.header-tasks:hover svg path{
+    fill: #3D63D2;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.header-search {
+    font-size: 14px;
+    font-weight: 400;
+    color: #B3B3B3;
+}
+
+.header-search input {
+    margin-left: 780px;
+    width: 373px;
+    height: 40px;
+    padding: 0 40px;
+    border: 1px solid #EFEFF5;
+    border-radius: 10px;
+    background: #E2E2E2 url("../images/search.png") no-repeat;
+    background-position: center left 20px;
+}
+
+.header-statistics {
+    margin-left: 40px;
+}
+
+.header-statistics:hover a svg path{
+    fill: #467DF2;
+}
+
+.header-button {
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 10px 18px;
+    width: 83px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background: #467DF2;
+    font-size: 14px;
+    font-weight: 700;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.header-button:hover {
+    background: #2F54A3;
 }
