@@ -22,15 +22,16 @@ body {
 
 .layout {
     display: flex;
+    min-height: 100vh;
 }
 
 .sidebar {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex-shrink: 0;
     background: #F7F7F7;
     width: 250px;
-    height: 100vh;
     padding: 25px 17px 17px 17px;
 }
 
@@ -109,11 +110,13 @@ body {
 .header-top {
     display: flex;
     justify-content: space-between;
+    min-width: 100vh;
     height: 70px;
     background: #F7F7F7;
 }
 
 .header-menu {
+    position: relative;
     display: flex;
     padding: 19px 0 19px 40px;
     align-items: center;
@@ -149,11 +152,12 @@ body {
 }
 
 .header-tasks {
+    position: relative;
     display: flex;
     align-items: center;
     margin-left: 40px;
     font-size: 14px;
-    line-height: 19;
+    
     cursor: pointer;
 }
 
@@ -170,19 +174,45 @@ body {
     fill: #3D63D2;
 }
 
+.header-tasks-list {
+    display: none;
+    position: absolute;
+    width: 110px;
+    height: 53px;
+    top: 35px;
+    padding: 30px 20px;
+    background: #FFFFFF;
+    box-shadow: 0 4px 20px rgba(102, 102, 102, 0.15);
+    border-radius: 10px;
+}
+
+.header-tasks:hover .header-tasks-list {
+    display: block;
+}
+
+.header-tasks-item {
+    margin-bottom: 15px;
+    color: #686464;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
 .header-right {
     display: flex;
     align-items: center;
+    margin-left: 580px;
 }
 
 .header-search {
+
     font-size: 14px;
     font-weight: 400;
     color: #B3B3B3;
 }
 
 .header-search input {
-    margin-left: 780px;
+
     width: 373px;
     height: 40px;
     padding: 0 40px;
@@ -217,4 +247,13 @@ body {
 
 .header-button:hover {
     background: #2F54A3;
+}
+
+.header-title {
+    margin-left: 40px;
+    margin-top: 25px;
+    font-size: 35px;
+    font-weight: 700;
+    color: #4F4E4F;
+
 }
